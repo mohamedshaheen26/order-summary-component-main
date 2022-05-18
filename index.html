@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Red Hat Display", sans-serif;
+        background-image: url(../order-summary-component-main/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+      }
+      .card-component {
+        background-color: white;
+        width: 350px;
+        margin: 10px auto;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 10px 25px 0px #ddd;
+      }
+      .card-component img {
+        width: 100%;
+      }
+      .card-component .content {
+        padding: 15px 25px;
+        text-align: center;
+      }
+      .card-component .content h1 {
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: 900;
+      }
+      .card-component .content .heading p {
+        color: hsl(224, 23%, 55%);
+        line-height: 1.5;
+        margin: 10px 0;
+        font-size: 14px;
+      }
+      .card-component .plan {
+        padding: 15px;
+        border-radius: 15px;
+        background-color: hsl(225, 100%, 98%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .card-component .plan > div {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .card-component .plan img {
+        width: 40px;
+      }
+      .card-component .plan p {
+        font-weight: 900;
+        font-size: 14px;
+      }
+      .card-component .plan span {
+        display: block;
+        color: hsl(224, 23%, 55%);
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      .card-component .plan a {
+        font-weight: 900;
+        color: hsl(245, 75%, 52%);
+        font-size: 14px;
+      }
+      .card-component .plan a:hover {
+        text-decoration: none;
+        color: hsl(245, 100%, 68%);
+      }
+      .card-component button {
+        width: 100%;
+        background-color: hsl(245, 75%, 52%);
+        padding: 15px;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+        box-shadow: 0px 10px 30px -10px #4545a7;
+      }
+      .card-component button:hover {
+        background-color: hsl(245, 100%, 68%);
+      }
+      .card-component .cancel {
+        width: fit-content;
+        margin: auto;
+        display: block;
+        padding: 25px 0 20px;
+        color: hsl(224, 23%, 55%);
+        font-weight: 900;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .card-component .cancel:hover {
+        color: hsl(223, 47%, 23%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (max-width: 375px) {
+        .card-component {
+          width: 300px;
+        }
+        .card-component .content {
+          padding: 0 15px;
+        }
+        .card-component .content h1 {
+          font-size: 16px;
+          padding-top: 15px;
+        }
+        .card-component .plan {
+          padding: 10px;
+        }
+        .card-component .plan p {
+          font-size: 12px;
+        }
+        .card-component .plan span {
+          font-size: 12px;
+        }
+        .card-component .plan a {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-component">
+      <img src="images/illustration-hero.svg" alt="" />
+      <div class="content">
+        <div class="heading">
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="plan">
+          <div>
+            <img src="images/icon-music.svg" alt="" />
+            <div>
+              <p>Annual Plan</p>
+              <span>$59.99/year</span>
+            </div>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <button>Proceed to Payment</button>
+        <a href="#" class="cancel">Cancel Order</a>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
